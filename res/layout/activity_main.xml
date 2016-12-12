@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    style="@style/AppTheme"
+    tools:context="com.example.nicholassaunderson.scrollexperimentapplication.views.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimary">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/profile_icon"
+            android:layout_marginLeft="10dp"
+            android:contextClickable="true"
+            android:onClick="openProfile"/>
+    </android.support.v7.widget.Toolbar>
+
+
+    <ImageButton
+        android:id="@+id/button1"
+        android:layout_width="156.8dp"
+        android:layout_height="215.6dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="30dp"
+        android:onClick="openGrid"
+        android:background="@drawable/group_grid" />
+
+    <ImageButton
+        android:id="@+id/button2"
+        android:layout_width="156.8dp"
+        android:layout_height="215.6dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="340dp"
+        android:onClick="openGridSize"
+        android:background="@drawable/group_size" />
+
+    <ImageButton
+        android:id="@+id/button3"
+        android:layout_width="156.8dp"
+        android:layout_height="215.6dp"
+        android:layout_marginTop="520dp"
+        android:layout_marginLeft="30dp"
+        android:onClick="openTile"
+        android:background="@drawable/group_tile_sp" />
+
+    <ImageButton
+        android:id="@+id/button4"
+        android:layout_width="156.8dp"
+        android:layout_height="215.6dp"
+        android:layout_marginTop="520dp"
+        android:layout_marginLeft="340dp"
+        android:onClick="openTileNoSpace"
+        android:background="@drawable/group_tile" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/instruction"
+        android:textSize="24sp"
+        android:layout_marginTop="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignStart="@+id/button1" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:text="Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="78dp"
+        android:layout_marginLeft="400dp"
+        android:onClick="openSettings"/>
+
+
+</RelativeLayout>
